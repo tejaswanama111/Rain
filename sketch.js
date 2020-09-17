@@ -1,18 +1,12 @@
-var rainSound;
-
 var spot = {
   x: 100,
   y: 50
-};
+}
 
 var col = {
   r: 255,
   g: 0,
   b: 0
-};
-
-function preload() {
-  rainSound = loadSound("rain.mp3");
 }
 
 function setup() {
@@ -21,8 +15,6 @@ function setup() {
 }
 
 function draw() {
-  
-  rainSound.loop();
   
   col.r = random(100, 255);
   col.g = 0;
